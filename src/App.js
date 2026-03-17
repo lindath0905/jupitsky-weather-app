@@ -5,6 +5,7 @@ import "./App.css";
 export default function App() {
   return (
     <div className="App">
+      <div className="container"></div>
       JupitSky - Weather App
       <footer>
         This project was coded by{" "}

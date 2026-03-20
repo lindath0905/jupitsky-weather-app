@@ -7,7 +7,7 @@ export default function App() {
     <div className="App">
       <div className="container"></div>
       JupitSky - Weather App
-      <Weather />
+      <Weather defaultCity="Vienna"/>
       <footer>
         This project was coded by{" "}
         <a href="https://github.com/lindath0905" target="_blank">

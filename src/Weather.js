@@ -8,7 +8,6 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
-    console.log(response.data);
     setWeatherData({
       ready: true,
       temperature: response.data.temperature.current,
@@ -21,18 +20,21 @@ export default function Weather(props) {
     });
   }
 
-  function Search() {
-    const apiKey = "df3t9495b3b3410e50b1aoab7d1cc149";
-    const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}&unit=metric`;
-    axios.get(apiUrl).then(handleResponse);
-  }
   function handleSubmit(event) {
     event.preventDefault();
+    search();
   }
 
   function handleCityChange(event) {
     setCity(event.target.value);
   }
+
+  function search() {
+    const apiKey = "df3t9495b3b3410e50b1aoab7d1cc149";
+    const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&unit=metric`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
   if (weatherData.ready) {
     return (
       <div className="Weather">
@@ -60,7 +62,7 @@ export default function Weather(props) {
       </div>
     );
   } else {
-    Search();
-    return "loading ..";
+    search();
+    return " loading ..";
   }
 }

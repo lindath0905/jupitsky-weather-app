@@ -3,6 +3,11 @@
   margin: 30px auto;
 }
 
+.container {
+  font-family: "Titan One", sans-serif;
+  color: blueviolet;
+}
+
 .App footer {
   font-size: 13px;
   margin: 10px 0;

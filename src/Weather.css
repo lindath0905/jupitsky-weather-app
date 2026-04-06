@@ -1,13 +1,36 @@
 .Weather {
-  border: 1px solid rgb(165, 165, 165);
+  border: 3px solid violet;
   font-family: arial, sans-serif;
   padding: 16px;
-  border-radius: 4px;
+  border-radius: 10px;
   color: rgb(135, 135, 135);
 }
 
 .Weather form {
   margin-bottom: 20px;
+}
+
+.weather-search-input {
+  width: 300px;
+  font-size: 23px;
+  border: 3px solid violet;
+  border-radius: 6px;
+}
+
+.weather-search-input:focus {
+  outline: none;
+}
+
+.weather-search-button {
+  background: blueviolet;
+  border: 3px solid blueviolet;
+  color: violet;
+  font-family: "Titan One", sans-serif;
+}
+
+.weather-search-button:hover {
+  background-color: rgb(164, 101, 223);
+  color: violet;
 }
 
 .Weather h1 {

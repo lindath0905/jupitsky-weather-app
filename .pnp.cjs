@@ -28,6 +28,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@bybas/weather-icons", "npm:2.0.0"],\
           ["axios", "npm:1.13.6"],\
           ["bootstrap", "virtual:94f5e85c2672b707099e21a964cbe1003ec129d4cbdd9cbaf23f1ba5a0a383304fcd1f9b8683bd8c73dbc5706c54fcb74fbeca4801ae3602cc4a11a9fb6561d7#npm:5.3.8"],\
           ["jupitsky-weather-app", "workspace:."],\
@@ -3104,6 +3105,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../AppData/Local/Yarn/Berry/cache/@bcoe-v8-coverage-npm-0.2.3-9e27b3c57e-10c0.zip/node_modules/@bcoe/v8-coverage/",\
         "packageDependencies": [\
           ["@bcoe/v8-coverage", "npm:0.2.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@bybas/weather-icons", [\
+      ["npm:2.0.0", {\
+        "packageLocation": "../../AppData/Local/Yarn/Berry/cache/@bybas-weather-icons-npm-2.0.0-3625c2d254-10c0.zip/node_modules/@bybas/weather-icons/",\
+        "packageDependencies": [\
+          ["@bybas/weather-icons", "npm:2.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -11548,6 +11558,7 @@ const RAW_RUNTIME_STATE =
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@bybas/weather-icons", "npm:2.0.0"],\
           ["axios", "npm:1.13.6"],\
           ["bootstrap", "virtual:94f5e85c2672b707099e21a964cbe1003ec129d4cbdd9cbaf23f1ba5a0a383304fcd1f9b8683bd8c73dbc5706c54fcb74fbeca4801ae3602cc4a11a9fb6561d7#npm:5.3.8"],\
           ["jupitsky-weather-app", "workspace:."],\

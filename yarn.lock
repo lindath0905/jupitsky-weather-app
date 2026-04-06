@@ -1571,6 +1571,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bybas/weather-icons@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@bybas/weather-icons@npm:2.0.0"
+  checksum: 10c0/01ba426a72697c91789a709b387adef074fbacff8213807db77997fd6e996bec8ff34306d1ec92a93e505148269f8ae4e4ad5c71f4475c2b10e9c078ca089522
+  languageName: node
+  linkType: hard
+
 "@csstools/normalize.css@npm:*":
   version: 12.1.1
   resolution: "@csstools/normalize.css@npm:12.1.1"
@@ -8384,6 +8391,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "jupitsky-weather-app@workspace:."
   dependencies:
+    "@bybas/weather-icons": "npm:^2.0.0"
     axios: "npm:^1.13.6"
     bootstrap: "npm:^5.3.8"
     react: "npm:^19.2.4"

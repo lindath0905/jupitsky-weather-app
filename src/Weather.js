@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Weatherinfo from "./Weatherinfo";
+import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
 
@@ -16,7 +16,7 @@ export default function Weather(props) {
       date: new Date(response.data.time * 1000),
       humidity: response.data.temperature.humidity,
       description: response.data.condition.description,
-      icon: "https://www.gstatic.com/weather/conditions/v1/svg/sunny_light.svg",
+      icon: response.data.condition.icon,
     });
   }
 
@@ -58,7 +58,7 @@ export default function Weather(props) {
             </div>
           </div>
         </form>
-        <Weatherinfo data={weatherData} />
+        <WeatherInfo data={weatherData} />
       </div>
     );
   } else {
